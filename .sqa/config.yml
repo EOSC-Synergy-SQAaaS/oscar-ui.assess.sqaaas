@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-brown-booby.sh
-        container: qc.acc_bumpy-gold-whippet
+        - /usr/bin/env sh .sqa/script.foggy-goldenrod-hare.sh
+        container: qc.acc_wheezy-sangria-penguin
   QC.Doc:
     repos:
       github.com/grycap/oscar-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-silver-oriole.sh
-        container: qc.doc_breezy-viridian-zorse
+        - /usr/bin/env sh .sqa/script.homey-pumpkin-javanese.sh
+        container: qc.doc_shaky-saffron-dunker
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-cardinal-fowl.sh
-        container: qc.doc_squeaky-zucchini-butterfly
+        - /usr/bin/env sh .sqa/script.muggy-olive-dugong.sh
+        container: qc.doc_cloudy-russet-zebu
       github.com/grycap/oscar-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-seashell-dolphin.sh
-        container: qc.doc_muggy-olivine-capuchin
+        - /usr/bin/env sh .sqa/script.lanky-brass-raccoon.sh
+        container: qc.doc_lousy-sepia-dog
   QC.Lic:
     repos:
       github.com/grycap/oscar-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-rose-ray.sh
-        container: qc.lic_silly-razzmatazz-monster
+        - /usr/bin/env sh .sqa/script.nerdy-taupe-bat.sh
+        container: qc.lic_skinny-fuchsia-sheep
   QC.Sty:
     repos:
       github.com/grycap/oscar-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-carmine-chimpanzee.sh
-        container: qc.sty_fuzzy-purple-russel
+        - /usr/bin/env sh .sqa/script.trippy-wheat-buzzard.sh
+        container: qc.sty_boozy-silver-capybara
   QC.Ver:
     repos:
       github.com/grycap/oscar-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scanty-brass-discus.sh
-        container: qc.ver_thirsty-heliotrope-dachshund
+        - /usr/bin/env sh .sqa/script.hilly-jade-capuchin.sh
+        container: qc.ver_dorky-alizarin-starfish
 timeout: 1800
