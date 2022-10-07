@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: 1.7.0_no_kubectl
+      branch: release/1.7.3
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/oscar-ui:
       branch: master
@@ -15,32 +15,38 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-purple-anteater.sh
-        container: qc.acc_greasy-apricot-cheetah
+        - /usr/bin/env sh .sqa/script.pokey-brown-booby.sh
+        container: qc.acc_bumpy-gold-whippet
   QC.Doc:
     repos:
       github.com/grycap/oscar-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-cyan-birman.sh
-        container: qc.doc_messy-ultramarine-tapir
+        - /usr/bin/env sh .sqa/script.goopy-silver-oriole.sh
+        container: qc.doc_breezy-viridian-zorse
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.jumpy-rose-buzzard.sh
-        container: qc.doc_pretty-razzmatazz-zorse
+        - /usr/bin/env sh .sqa/script.ready-cardinal-fowl.sh
+        container: qc.doc_squeaky-zucchini-butterfly
       github.com/grycap/oscar-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-cinnabar-retriever.sh
-        container: qc.doc_gloppy-grey-hummingbird
+        - /usr/bin/env sh .sqa/script.thirsty-seashell-dolphin.sh
+        container: qc.doc_muggy-olivine-capuchin
   QC.Lic:
     repos:
       github.com/grycap/oscar-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-chocolate-flamingo.sh
-        container: qc.lic_grumpy-amethyst-fossa
+        - /usr/bin/env sh .sqa/script.flimsy-rose-ray.sh
+        container: qc.lic_silly-razzmatazz-monster
+  QC.Sty:
+    repos:
+      github.com/grycap/oscar-ui jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-carmine-chimpanzee.sh
+        container: qc.sty_fuzzy-purple-russel
   QC.Ver:
     repos:
       github.com/grycap/oscar-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-chartreuse-fly.sh
-        container: qc.ver_hazy-cinnamon-ostrich
+        - /usr/bin/env sh .sqa/script.scanty-brass-discus.sh
+        container: qc.ver_thirsty-heliotrope-dachshund
 timeout: 1800
