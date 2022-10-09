@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-sangria-coyote.sh
-        container: qc.acc_stealthy-maroon-booby
+        - /usr/bin/env sh .sqa/script.dorky-bistre-buzzard.sh
+        container: qc.acc_cranky-orchid-turtle
   QC.Doc:
     repos:
       github.com/grycap/oscar-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-ruby-snail.sh
-        container: qc.doc_sleazy-lilac-badger
+        - /usr/bin/env sh .sqa/script.lanky-brown-uguisu.sh
+        container: qc.doc_slaphappy-crimson-centipede
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-salmon-tzu.sh
-        container: qc.doc_grumpy-cinnabar-squirrel
+        - /usr/bin/env sh .sqa/script.snappy-cream-spitz.sh
+        container: qc.doc_greasy-rose-sparrow
       github.com/grycap/oscar-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cranky-black-gopher.sh
-        container: qc.doc_woolly-plum-leopard
+        - /usr/bin/env sh .sqa/script.dorky-red-avocet.sh
+        container: qc.doc_snazzy-ultramarine-ragdoll
   QC.Lic:
     repos:
       github.com/grycap/oscar-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-dandelion-coyote.sh
-        container: qc.lic_clammy-viridian-guppy
+        - /usr/bin/env sh .sqa/script.ugly-gamboge-centipede.sh
+        container: qc.lic_boozy-pear-caterpillar
   QC.Sty:
     repos:
       github.com/grycap/oscar-ui eslint:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-sangria-argentino.sh
-        container: qc.sty_dorky-brass-kakapo
+        - /usr/bin/env sh .sqa/script.cheeky-auburn-liger.sh
+        container: qc.sty_geeky-brown-squid
       github.com/grycap/oscar-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.tacky-turquoise-penguin.sh
-        container: qc.sty_chummy-green-eagle
+        - /usr/bin/env sh .sqa/script.queasy-grey-dormouse.sh
+        container: qc.sty_squeaky-rose-spitz
   QC.Ver:
     repos:
       github.com/grycap/oscar-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-eggplant-dane.sh
-        container: qc.ver_crabby-violet-tamarin
+        - /usr/bin/env sh .sqa/script.whiny-sapphire-kingfisher.sh
+        container: qc.ver_boozy-linen-chin
 timeout: 1800
