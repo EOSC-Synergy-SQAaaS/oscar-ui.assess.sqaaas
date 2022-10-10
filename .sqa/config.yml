@@ -2,10 +2,10 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.3
+      branch: release/1.7.4
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/grycap/oscar-ui:
-      branch: master
+      branch: sqaaas2022
       repo: https://github.com/grycap/oscar-ui
 environment:
   JPL_DOCKERFORCEBUILD: enabled
@@ -15,42 +15,42 @@ sqa_criteria:
     repos:
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-bistre-buzzard.sh
-        container: qc.acc_cranky-orchid-turtle
+        - /usr/bin/env sh .sqa/script.shabby-bronze-birman.sh
+        container: qc.acc_snazzy-cyan-ferret
   QC.Doc:
     repos:
       github.com/grycap/oscar-ui find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lanky-brown-uguisu.sh
-        container: qc.doc_slaphappy-crimson-centipede
+        - /usr/bin/env sh .sqa/script.shaky-ruby-capuchin.sh
+        container: qc.doc_hilly-lemon-jackal
       github.com/grycap/oscar-ui git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-cream-spitz.sh
-        container: qc.doc_greasy-rose-sparrow
+        - /usr/bin/env sh .sqa/script.wimpy-rose-anteater.sh
+        container: qc.doc_cranky-apricot-wallaby
       github.com/grycap/oscar-ui markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-red-avocet.sh
-        container: qc.doc_snazzy-ultramarine-ragdoll
+        - /usr/bin/env sh .sqa/script.grumpy-ultramarine-jackal.sh
+        container: qc.doc_lanky-orange-hyena
   QC.Lic:
     repos:
       github.com/grycap/oscar-ui licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-gamboge-centipede.sh
-        container: qc.lic_boozy-pear-caterpillar
+        - /usr/bin/env sh .sqa/script.snazzy-vermilion-moorhen.sh
+        container: qc.lic_lanky-tan-wildebeest
   QC.Sty:
     repos:
-      github.com/grycap/oscar-ui eslint:
-        commands:
-        - /usr/bin/env sh .sqa/script.cheeky-auburn-liger.sh
-        container: qc.sty_geeky-brown-squid
       github.com/grycap/oscar-ui jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-grey-dormouse.sh
-        container: qc.sty_squeaky-rose-spitz
+        - /usr/bin/env sh .sqa/script.nerdy-jade-chameleon.sh
+        container: qc.sty_sickly-lemon-hummingbird
+      github.com/grycap/oscar-ui stylelint:
+        commands:
+        - /usr/bin/env sh .sqa/script.scummy-chocolate-olm.sh
+        container: qc.sty_boozy-indigo-sloth
   QC.Ver:
     repos:
       github.com/grycap/oscar-ui get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-sapphire-kingfisher.sh
-        container: qc.ver_boozy-linen-chin
+        - /usr/bin/env sh .sqa/script.zippy-gamboge-jellyfish.sh
+        container: qc.ver_squirrely-zucchini-emu
 timeout: 1800
