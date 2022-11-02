@@ -1,5 +1,5 @@
 services:
-  qc.acc_cheeky-charcoal-corgi:
+  qc.acc_nerdy-platinum-elephant:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,7 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_dorky-corn-snail:
+  qc.doc_dorky-champagne-audemer:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -17,7 +17,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_shaggy-malachite-gopher:
+  qc.doc_shabby-sangria-harrier:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -25,7 +25,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_snappy-harlequin-blue:
+  qc.doc_stealthy-corn-yak:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -35,7 +35,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_cheeky-wisteria-rottweiler:
+  qc.lic_squeaky-magnolia-audemer:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Lic/licensee
       dockerfile: Dockerfile
@@ -45,7 +45,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_scummy-champagne-guppy:
+  qc.sty_fuzzy-heliotrope-akbash:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/stylelint
       dockerfile: Dockerfile
@@ -55,7 +55,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_ugly-mauve-monster:
+  qc.sty_silly-peach-dodo:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/jsonlint
       dockerfile: Dockerfile
@@ -65,7 +65,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_slimy-mauve-mongoose:
+  qc.ver_skanky-violet-flamingo:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
